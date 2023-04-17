@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="admin.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery.fancytable/dist/fancyTable.min.js"></script>
+
+  <style>
+    .my-custom-scrollbar {
+        position: relative;
+        height: 400px;
+        width:850px;
+        overflow: auto;
+        }
+        .table-wrapper-scroll-y {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: medium;
+        font-size: 18px;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        button{
+    background-color :rgb(60, 0, 160);
+     color: rgb(255, 255, 255);
+     float: right;
+}
+.divScroll {
+    overflow:scroll;
+    height:400px;
+    width: 100%;
+    }
+
+  th {
+    position: sticky;
+    top: 0;
+    z-index: 1; 
+    background: #f2e9c1;
+}
+  tr:nth-child(even) {background-color: #f2f2f2;}
+  </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Library Management System</h2>
+        <button type="button" class="btn btn-outline-primary" onclick="window.location.replace('login.html')">Logout</button>
+    </br>
+    <div class="row">
+        <div class="col-md-2 offset-md-4">
+            <input type="text" class="form-control" id="search" onkeyup="myFunction()" placeholder="Search..." >
+        </div>
+
+    </div>
+    </br>
+    </br>
+    <div>
+        <table class="table table-light table-hover sampleTable" id="myTable" style="overflow-x:auto;">
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Subject</th>
+                    <th>Publish date</th>
+                    <th>Total Books</th>
+                    <th>Books Available</th>
+                    <th>Books Issued</th>
+                </tr>
+              </thead >
+              <tbody id="data-output">
+              </tbody>
+        </table>
+        
+    </div>
+    <p>List of books :<span id ="count"></span></p>
+    </div>
+    <script>
+
+        $(document).ready(function() {
+            $(".sampleTable").fancyTable({
+                sortColumn:0,
+                pagination: true,
+                perPage:3,
+                globalSearch:true
+            });		
+        });
+
+        co=document.getElementById("count");
+        co.innerHTML=$('#myTable tr').length;
+
+        function myFunction()
+        {
+            var input, filter, table, tr, td, i, txtValue,tsize;
+            var c=0;
+            co=document.getElementById("count");
+            input = document.getElementById("search");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++)
+            {
+                td = tr[i].getElementsByTagName("td")[2];
+                td1 = tr[i].getElementsByTagName("td")[1];
+                td2 = tr[i].getElementsByTagName("td")[3];
+                td3 = tr[i].getElementsByTagName("td")[4];
+                if (td) 
+                {
+                   txtValue = td.textContent;
+                   textval =td1.textContent;
+                   text1 =td2.textContent;
+                   text2 =td3.textContent;
+                   if (txtValue.toUpperCase().startsWith(filter) || textval.toUpperCase().startsWith(filter) || text1.toUpperCase().startsWith(filter) || text2.toUpperCase().startsWith(filter))
+                    {
+                       tr[i].style.display = "";
+                       c++;
+                    } 
+                    else 
+                    {
+                        tr[i].style.display = "none";
+                    }
+                }       
+           }
+           co.innerHTML=c;
+        }
+    </script>
+    <script type="text/javascript">
+       
+    </script>
+</body>
+</html>

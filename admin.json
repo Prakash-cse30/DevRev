@@ -1,0 +1,212 @@
+[
+    {
+      "ISBN": 1,
+      "Title": "Full Stack Development",
+      "Author": "Mohanraj and Suresh",
+      "Subject": "Web Technology",
+      "Publishdate":"10-Apr-2022",
+      "NoofBooks":"10",
+      "BooksAvailable":"8",
+      "BooksIssued":"2"
+    },
+    {
+        "ISBN": 2,
+        "Title": "Full Stack Development",
+        "Author": "Suresh",
+        "Subject": "Web Technology",
+        "Publishdate":"20-May-2021",
+        "NoofBooks":"10",
+        "BooksAvailable":"10",
+        "BooksIssued":"0"
+    },
+    {
+        "ISBN": 3,
+        "Title": "Full Stack Development",
+        "Author": "Amar Singh",
+        "Subject": "Web Technology",
+        "Publishdate":"12-Aug-2022",
+        "NoofBooks":"10",
+        "BooksAvailable":"5",
+        "BooksIssued":"5"
+    },
+    {
+        "ISBN": 4,
+        "Title": "Be a Full Stack Development",
+        "Author": "Raj Suresh",
+        "Subject": "Web Technology",
+        "Publishdate":"11-Jan-2022",
+        "NoofBooks":"10",
+        "BooksAvailable":"7",
+        "BooksIssued":"3"
+    },
+    {
+        "ISBN": 5,
+        "Title": "Advanced Full Stack Development",
+        "Author": "Mohanraj and Suresh",
+        "Subject": "DSP",
+        "Publishdate":"10-Dec-2022",
+        "NoofBooks":"36",
+        "BooksAvailable":"28",
+        "BooksIssued":"8"
+    },
+    {
+        "ISBN": 6,
+        "Title": "Full Stack Development",
+        "Author": "Mohanraj and Suresh",
+        "Subject": "DSP",
+        "Publishdate":"14-Mar-2022",
+        "NoofBooks":"10",
+        "BooksAvailable":"8",
+        "BooksIssued":"2"
+    },
+    {
+        "ISBN": 7,
+        "Title": "Agile Programming",
+        "Author": "Mohanraj and Suresh",
+        "Subject": "DSP",
+        "Publishdate":"23-Jul-2021",
+        "NoofBooks":"10",
+        "BooksAvailable":"8",
+        "BooksIssued":"2"
+    },
+    {
+        "ISBN": 8,
+        "Title": "Total Quality Management",
+        "Author": "Shanmugaraja",
+        "Subject": "Management",
+        "Publishdate":"5-Jul-2022",
+        "NoofBooks":"10",
+        "BooksAvailable":"8",
+        "BooksIssued":"2"
+    },
+    {
+        "ISBN": 9,
+        "Title": "Microprocessor and Microcontroller",
+        "Author": "Illanchezlian",
+        "Subject": "Electronics",
+        "Publishdate":"26-Nov-2011",
+        "NoofBooks":"10",
+        "BooksAvailable":"10",
+        "BooksIssued":"0"
+    },
+    {
+        "ISBN": 10,
+        "Title": "Cryptography and Network Security",
+        "Author": "Senthilkumar",
+        "Subject": "Security",
+        "Publishdate":"10-Sep-2022",
+        "NoofBooks":"10",
+        "BooksAvailable":"10",
+        "BooksIssued":"0"
+    },
+    {
+        "ISBN": 11,
+        "Title": "Machine Learning",
+        "Author": "Jeba Emyln",
+        "Subject": "AI",
+        "Publishdate":"11-Nov-2021",
+        "NoofBooks":"10",
+        "BooksAvailable":"0",
+        "BooksIssued":"10"
+    },
+    {
+        "ISBN": 12,
+        "Title": "Python Programming",
+        "Author": "Selvanathan",
+        "Subject": "Programming",
+        "Publishdate":"22-Aug-2022",
+        "NoofBooks":"30",
+        "BooksAvailable":"5",
+        "BooksIssued":"25"
+    },
+    {
+        "ISBN": 13,
+        "Title": "Java Programming",
+        "Author": "Aldo Staling",
+        "Subject": "Programming",
+        "Publishdate":"15-May-2022",
+        "NoofBooks":"36",
+        "BooksAvailable":"30",
+        "BooksIssued":"6"
+    },
+    {
+        "ISBN": 14,
+        "Title": "Wireless Sensor Network",
+        "Author": "Thangaraj",
+        "Subject": "Sensors",
+        "Publishdate":"16-May-2022",
+        "NoofBooks":"18",
+        "BooksAvailable":"6",
+        "BooksIssued":"12"
+    },
+    {
+        "ISBN": 15,
+        "Title": "Database Management System",
+        "Author": "Akilandeswari",
+        "Subject": "Data Storage",
+        "Publishdate":"14-Jan-2023",
+        "NoofBooks":"17",
+        "BooksAvailable":"5",
+        "BooksIssued":"12"
+    },
+    {
+        "ISBN": 16,
+        "Title": "Computer Networks",
+        "Author": "Shanmugaraja",
+        "Subject": "Networks",
+        "Publishdate":"15-Mar-2021",
+        "NoofBooks":"28",
+        "BooksAvailable":"26",
+        "BooksIssued":"2"
+    },
+    {
+        "ISBN": 17,
+        "Title": "Socket Programming",
+        "Author": "Shanmugaraja",
+        "Subject": "Networks",
+        "Publishdate":"31-Jul-2022",
+        "NoofBooks":"20",
+        "BooksAvailable":"18",
+        "BooksIssued":"2"
+    },
+    {
+        "ISBN": 18,
+        "Title": "Compiler Desing",
+        "Author": "Vasanthi",
+        "Subject": "Compilers",
+        "Publishdate":"10-Aug-2022",
+        "NoofBooks":"10",
+        "BooksAvailable":"10",
+        "BooksIssued":"0"
+    },
+    {
+        "ISBN": 19,
+        "Title": "Web Technology",
+        "Author": "Komalavalli",
+        "Subject": "Programming",
+        "Publishdate":"13-May-2022",
+        "NoofBooks":"15",
+        "BooksAvailable":"5",
+        "BooksIssued":"10"
+    },
+    {
+        "ISBN": 20,
+        "Title": "Software Engineering",
+        "Author": "Iyyanar",
+        "Subject": "Software Engineering",
+        "Publishdate":"14-Dec-2022",
+        "NoofBooks":"35",
+        "BooksAvailable":"22",
+        "BooksIssued":"13"
+    },
+    {
+        "ISBN": 21,
+        "Title": "Agile Software Development",
+        "Author": "Deepika",
+        "Subject": "Software Engineering",
+        "Publishdate":"31-Sep-2022",
+        "NoofBooks":"20",
+        "BooksAvailable":"18",
+        "BooksIssued":"2"
+    }
+]
