@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
+  <title>Library Management System</title>
   <style>
     .container{
       width: 100%;
@@ -75,6 +75,7 @@
     function validate(){
       var name= document.getElementById("uname").value;
       var pass= document.getElementById('pword').value;
+      // this password check for this sample project, this check will be done in backend.
       if((name=="admin" && pass=="admin")){
         window.location.replace("admin.html");
         return false;

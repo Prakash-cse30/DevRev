@@ -8,8 +8,7 @@ fetch("admin.json")
     let out ="",c=0;
     for(let product of data){
         out += `
-        <tr>
-        <td>${product.ISBN}</td>
+        <tr>  
         <td>${product.Title}</td>
         <td>${product.Author}</td>
         <td>${product.Subject}</td>
@@ -23,5 +22,12 @@ fetch("admin.json")
         c++;
     }
     placeholder.innerHTML = out;
-    co.innerHTML=c;
+    
+    $(".sampleTable").fancyTable({
+        sortColumn:0,
+        pagination: true,
+        perPage:5,
+        globalSearch:true
+    });
+
 })
