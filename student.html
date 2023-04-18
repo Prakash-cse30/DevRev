@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Library Management System</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -52,7 +52,7 @@
             <h2>Library Management System</h2>
         </div>
         <div>
-            <button type="button" class="btn btn-outline-primary" onclick="window.location.replace('login.html')">Logout</button>
+            <button type="button" class="btn btn-outline-primary" onclick="Logout()">Logout</button>
         </div>
         <div>
             <h3>List of my Books</h3>
@@ -123,6 +123,21 @@
                 }       
            }
            co.innerHTML=c;
+        }
+    </script>
+    <script>
+        $(document).ready(function() {
+            let username = sessionStorage.getItem("key");
+            if(username ==null)
+            {
+                window.location.replace('login.html');
+            }
+
+        });
+        function Logout()
+        {
+            window.location.replace('login.html');
+            sessionStorage.clear();
         }
     </script>
 </body>

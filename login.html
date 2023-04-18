@@ -78,10 +78,12 @@
       // this password check for this sample project, this check will be done in backend.
       if((name=="admin" && pass=="admin")){
         window.location.replace("admin.html");
+        sessionStorage.setItem("key", name);
         return false;
       }
       if((name=="student" && pass=="student")){
         window.location.replace("student.html");
+        sessionStorage.setItem("key", name);
         return false;
       }
       else{
