@@ -75,6 +75,8 @@
     function validate(){
       var name= document.getElementById("uname").value;
       var pass= document.getElementById('pword').value;
+      //initially clear the session.
+      sessionStorage.clear();
       // this password check for this sample project, this check will be done in backend.
       if((name=="admin" && pass=="admin")){
         window.location.replace("admin.html");

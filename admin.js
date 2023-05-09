@@ -30,4 +30,7 @@ fetch("admin.json")
         globalSearch:true
     });
 
+    row = $('.fancySearchRow');
+            row.insertBefore(row.prev());
+
 })
